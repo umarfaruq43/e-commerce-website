@@ -1,0 +1,23 @@
+.navbar {
+  @apply container bg-White flex border-b py-4 md:py-9 px-4 items-center justify-between;
+}
+
+.navList {
+  @apply md:mr-5 relative group;
+}
+
+.navLink {
+  @apply md:px-3 font-bold md:font-medium  hover:text-very-dark-blue inline-block;
+}
+
+.navLine {
+  @apply inline-block bottom-3  bg-Orange md:-bottom-9   left-0 w-0  transition-all duration-700  h-1 absolute;
+}
+
+.input_form {
+  @apply w-full  p-3 pl-12  rounded-md text-base bg-light-grayish-blue focus:outline-none;
+}
+
+.form-btn {
+  @apply bg-Orange text-White font-semibold w-full  p-3 rounded-md text-base  focus:outline-none cursor-pointer    justify-between px-5 hover:opacity-70;
+}

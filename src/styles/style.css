@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Kumbh Sans", sans-serif;
+  }
+}
+@layer {
+  button {
+    outline: none;
+  }
+}
+
+/* * {
+  border: 1px solid red;
+} */
+/* 
+ul li{
+  display: flex;
+  text-align: center;
+  align-items: center;
+} */
+
+/* .nav {
+  @apply container py-4 flex border-b  content-center justify-between;
+} */
+
+/* .swiper {
+  
+} */
+
+@layer utilities {
+  .equal {
+    @apply flex items-center;
+  }
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+
+.swiper-slide img {
+  display: block;
+  /* width: 100%; */
+  /* height: 100%; */
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  /* height: 250px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+/* .mySwiper2 {
+ 
+} */
+
+/* .mySwiper {
+  /* height: 20%; */
+/* box-sizing: border-box; */
+/* padding: 10px 0; */
+/* }  */
+
+.mySwiper .swiper-slide {
+  width: 100px;
+  height: 100%;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 0.4;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-prev {
+  @apply text-sm text-very-dark-blue bg-white rounded-full w-10 h-10;
+}
+.swiper-button-prev:after {
+  @apply text-lg font-extrabold;
+  content: "prev";
+}
+.swiper-button-next {
+  @apply text-sm text-very-dark-blue bg-white rounded-full w-10 h-10;
+}
+.swiper-button-next:after {
+  @apply text-lg font-extrabold;
+  content: "next";
+}
+.tumb_warpper {
+  @apply border-4 border-Orange;
+}
+
+/* testing project  */
+
+/* absolute -top-20 -left-5 */
+
+.shock {
+  animation: bounce 1s;
+  animation-timing-function: ease;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(30);
+    z-index: 0;
+  }
+  30% {
+    transform: translateY(-15px);
+    scale: (1, 1);
+    z-index: 30;
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100);
+  }
+}
